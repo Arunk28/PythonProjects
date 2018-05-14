@@ -1,6 +1,6 @@
 # load the url
 from urllib.request import urlopen
-html = urlopen("http://www.google.com/")
+html = urlopen("http://www.google.com/").read()
 print(html)
 
 # comment the code
