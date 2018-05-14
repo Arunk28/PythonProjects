@@ -4,12 +4,16 @@
 # print(html)
 
 import http.client
-conn = http.client.HTTPConnection("api.github.com")
-headers = {"Content-type":"application/json","UserAgent ":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"}
-conn.request("GET", "/meta", "", headers)
+import json
+conn = http.client.HTTPConnection("jsonplaceholder.typicode.com")
+headers = {'Content-type': 'application/json'}
+conn.request("GET", "/users", "", headers)
 
 res = conn.getresponse()
-print(res.status)
+h= res.read().decode()
+j=json.loads(h)
+for m in j:
+    print(m["name"])
 
 
 
