@@ -9,7 +9,10 @@ cnxn = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
 
 # Trusted_Connection=yes;"
 cursor = cnxn.cursor()
-cursor.execute("SELECT * FROM Users where emailid = 'arun@syscloud.com'")
+cursor.execute("SELECT * FROM Users")
 tables  = cursor.fetchall()
+add =[]
 for row in tables:
-    print (row.emailid)
+   add.append(row.emailid)
+
+print(add)
