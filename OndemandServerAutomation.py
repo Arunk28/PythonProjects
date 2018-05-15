@@ -13,6 +13,6 @@ cursor.execute("SELECT * FROM Users")
 tables  = cursor.fetchall()
 add =[]
 for row in tables:
-   add.append(row.emailid)
+   add.append([row.id,row.emailid])
 
 print(add)
