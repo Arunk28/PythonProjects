@@ -15,4 +15,4 @@ add =[]
 for row in tables:
    add.append([row.id,row.emailid])
 
-print(add)
+len(add)
