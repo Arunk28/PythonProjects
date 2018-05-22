@@ -13,6 +13,8 @@ res = conn.getresponse()
 h= res.read().decode()
 
 j=json.loads(h)
+
+
 for m in j:
     print(m["name"])
 

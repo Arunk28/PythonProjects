@@ -7,12 +7,17 @@ cnxn = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
                       "Database=DbUtil;"
                       'uid='+user+';pwd='+pwd)
 
+
 # Trusted_Connection=yes;"
 cursor = cnxn.cursor()
-cursor.execute("SELECT * FROM Users")
+
+cursor.execute("exec py_test")
+# cursor.execute("SELECT * FROM Users")
 tables  = cursor.fetchall()
+
 add =[]
 for row in tables:
    add.append([row.id,row.emailid])
 
-len(add)
+print(add)
+input("\n\nPress the enter key to exit.")
