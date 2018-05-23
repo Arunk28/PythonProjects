@@ -6,6 +6,3 @@ class firstclass:
 
 
 
-a =firstclass()
-print(a.printname())
-
