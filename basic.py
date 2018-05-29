@@ -16,3 +16,5 @@ from fc import*
 
 v =firstclass()
 print(v.printname())
+
+v.sendmail("This is a test sending email through python","arun@syscloud.com,arunkumar280491@gmail.com","testmail")
