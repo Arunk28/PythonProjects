@@ -29,7 +29,7 @@ class firstclass:
         server.ehlo()
         server.starttls()
         server.ehlo()
-        server.login("arunk@syscloudtech.in", "Passw0rd#123")
+        server.login(config.FROM_ADDR, config.FROM_PWD)
         text = msg.as_string()
         server.sendmail(fromaddr,toaddr,text)
         server.quit()
@@ -38,6 +38,14 @@ class firstclass:
         context = ssl._create_unverified_context()
         html = urlopen(url,context=context).read()
         return html;
+
+class config:
+    TO_ADDR ="arun@syscloud.com"
+    URL_ADDR ="https://app.syscloud.com/"
+    FROM_ADDR ="arunk@syscloudtech.in"
+    FROM_PWD ="Passw0rd#123"
+    URL_CHECK_BODY="Please check the app.syscloud.com"
+    URL_CHECK_SUBJECT = "AppDown"
 
 
 
