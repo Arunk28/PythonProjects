@@ -1,4 +1,4 @@
-from fc import*
+from MailLib import*
 
 v =firstclass()
 

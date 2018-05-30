@@ -1,4 +1,4 @@
-from fc import*
+from MailLib import*
 
 # basic variable declaration
 a, b, c = 1, 2, "john"
