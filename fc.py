@@ -2,6 +2,8 @@ import smtplib
 import email
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from urllib.request import urlopen
+import ssl
 
 
 
@@ -31,6 +33,11 @@ class firstclass:
         text = msg.as_string()
         server.sendmail(fromaddr,toaddr,text)
         server.quit()
+
+    def isapprunning(self,url):
+        context = ssl._create_unverified_context()
+        html = urlopen(url,context=context).read()
+        return html;
 
 
 
