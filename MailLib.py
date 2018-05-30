@@ -47,6 +47,14 @@ class config:
     URL_CHECK_BODY="Please check the app.syscloud.com"
     URL_CHECK_SUBJECT = "AppDown"
 
+# File operation
+class fileoperation:
+    def writefile(self):
+        file1 = open(r"D:\MyFile2.txt","w+")
+        file1.write("test write python")
+        file1.close()
+
+
 
 
 

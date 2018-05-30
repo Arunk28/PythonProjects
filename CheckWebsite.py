@@ -14,3 +14,5 @@ else:
         v.sendmail(config.URL_CHECK_BODY, config.TO_ADDR,config.URL_CHECK_SUBJECT)
 
 
+o = fileoperation()
+o.writefile()
