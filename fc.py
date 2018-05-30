@@ -43,7 +43,7 @@ class config:
     TO_ADDR ="arun@syscloud.com"
     URL_ADDR ="https://app.syscloud.com/"
     FROM_ADDR ="arunk@syscloudtech.in"
-    FROM_PWD ="Passw0rd#123"
+    FROM_PWD ="xxxxxxxxxxxxxx"
     URL_CHECK_BODY="Please check the app.syscloud.com"
     URL_CHECK_SUBJECT = "AppDown"
 
