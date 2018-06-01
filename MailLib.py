@@ -50,7 +50,7 @@ class config:
 # File operation
 class fileoperation:
     def writefile(self):
-        file1 = open(r"D:\MyFile2.txt","w+")
+        file1 = open(r"D:\MyFile2.txt","a")
         file1.write("test write python")
         file1.close()
 
