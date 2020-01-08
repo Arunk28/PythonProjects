@@ -6,7 +6,7 @@ v =firstclass()
 
 content = v.isapprunning(config.URL_ADDR)
 if not content:
-    v.sendmail("Please check the app.syscloud.com","arun@syscloud.com","AppDown")
+    v.sendmail("Please check the app","arun@domain.com","AppDown")
 else:
     if b'syscloud' in content:
         print(content)
